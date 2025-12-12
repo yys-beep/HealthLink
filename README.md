@@ -64,7 +64,7 @@ The unified app includes both personal health management and **Guardian Mode** f
 |---|--------|-------------|
 | P1 | **Smart Check-In** | QR/NFC patient scanner |
 | P2 | **Patient Info** | Full patient details |
-| P3 | **NFC Wristband** | Hospital tag management |
+| P3 | **NFC Tracking Dashboard** | Real-time patient tracking |
 | P4 | **Prescription** | New prescription with auto-sync |
 
 ---
