@@ -49,6 +49,7 @@ The unified app includes both personal health management and **Guardian Mode** f
 | 3c | **Dependent Detail** | View dependent's health info |
 | 3d | **My Permissions** | View guardian access rights |
 | 3e | **Guardian Alerts** | Notifications for dependents |
+| 3f | **Guardian Assistant** | AI chatbot for managing dependents |
 | 4 | **Health Records** | Vaccinations, visits, lab results |
 | 5 | **Medications** | NFC scan, dosage tracking |
 | 6 | **Appointments** | Calendar, booking system |
@@ -64,7 +65,7 @@ The unified app includes both personal health management and **Guardian Mode** f
 |---|--------|-------------|
 | P1 | **Smart Check-In** | QR/NFC patient scanner |
 | P2 | **Patient Info** | Full patient details |
-| P3 | **NFC Wristband** | Hospital tag management |
+| P3 | **NFC Tracking Dashboard** | Real-time patient tracking |
 | P4 | **Prescription** | New prescription with auto-sync |
 
 ---
