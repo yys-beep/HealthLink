@@ -16,16 +16,19 @@
 <body>
     <div class="app-selector">
         <a href="../citizen/index.html" class="citizen"><i class="fas fa-user"></i> Citizen App</a>
-        <a href="../guardian/index.html" class="guardian"><i class="fas fa-user-shield"></i> Guardian App</a>
         <a href="index.html" class="provider active"><i class="fas fa-hospital"></i> Provider App</a>
     </div>
     <div class="screen-title"><h1>1. Check-In Station</h1><p>Tablet interface for patient verification</p></div>
     <div class="phone-container">
-        <div class="phone-frame">
+        <div class="phone-frame tablet-frame">
             <div class="phone-screen" style="background: linear-gradient(135deg, #1E3A5F, #0f172a);">
                 <div style="display: flex; height: 100%;">
                     <!-- Left Side - Scanner -->
-                    <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px; border-right: 1px solid rgba(255,255,255,0.1);">
+                    <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px; border-right: 1px solid rgba(255,255,255,0.1); position: relative;">
+                        <!-- NFC Tracking Link -->
+                        <a href="03-nfc.html" class="clickable" style="position: absolute; top: 16px; right: 16px; display: flex; align-items: center; gap: 8px; background: rgba(16, 185, 129, 0.2); border: 1px solid #10B981; padding: 8px 14px; border-radius: 10px; color: #10B981; text-decoration: none; font-size: 13px; font-weight: 600;">
+                            <i class="fas fa-map-location-dot"></i> NFC Tracking
+                        </a>
                         <div style="text-align: center; color: white; margin-bottom: 30px;">
                             <i class="fas fa-hospital" style="font-size: 40px; margin-bottom: 16px; color: #5B8DEF;"></i>
                             <h1 style="font-size: 24px; font-weight: 700; margin-bottom: 4px;">Klinik Kesihatan SS2</h1>
@@ -37,18 +40,18 @@
                             <span style="color: rgba(255,255,255,0.6); font-size: 14px;">Scan QR Code</span>
                         </div>
                         <div style="display: flex; gap: 12px;">
-                            <div class="clickable pulse" style="width: 80px; height: 80px; background: linear-gradient(135deg, #5B8DEF, #3B82F6); border-radius: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; cursor: pointer;">
+                            <a href="02-patient.html" class="clickable pulse" style="width: 80px; height: 80px; background: linear-gradient(135deg, #5B8DEF, #3B82F6); border-radius: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; cursor: pointer; text-decoration: none;">
                                 <i class="fas fa-wifi" style="font-size: 24px; margin-bottom: 4px;"></i>
                                 <span style="font-size: 10px;">NFC</span>
-                            </div>
-                            <div class="clickable" style="width: 80px; height: 80px; background: rgba(255,255,255,0.1); border-radius: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; cursor: pointer;">
+                            </a>
+                            <a href="02-patient.html" class="clickable" style="width: 80px; height: 80px; background: rgba(255,255,255,0.1); border-radius: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; cursor: pointer; text-decoration: none;">
                                 <i class="fas fa-id-card" style="font-size: 24px; margin-bottom: 4px;"></i>
                                 <span style="font-size: 10px;">MyKad</span>
-                            </div>
-                            <div class="clickable" style="width: 80px; height: 80px; background: rgba(255,255,255,0.1); border-radius: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; cursor: pointer;">
+                            </a>
+                            <a href="02-patient.html" class="clickable" style="width: 80px; height: 80px; background: rgba(255,255,255,0.1); border-radius: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; cursor: pointer; text-decoration: none;">
                                 <i class="fas fa-fingerprint" style="font-size: 24px; margin-bottom: 4px;"></i>
                                 <span style="font-size: 10px;">Biometric</span>
-                            </div>
+                            </a>
                         </div>
                     </div>
                     <!-- Right Side - Queue -->
@@ -63,21 +66,21 @@
                                 <div style="flex: 1;"><span style="font-size: 14px; font-weight: 600; display: block;">Ahmad Razif</span><span style="font-size: 12px; opacity: 0.7;">Checked in • 9:15 AM</span></div>
                                 <span style="background: #10B981; padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: 600;">In Progress</span>
                             </a>
-                            <div class="clickable" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 14px; display: flex; align-items: center; gap: 12px; color: white;">
+                            <a href="02-patient.html" class="clickable" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 14px; display: flex; align-items: center; gap: 12px; color: white; text-decoration: none;">
                                 <div style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">A02</div>
                                 <div style="flex: 1;"><span style="font-size: 14px; font-weight: 600; display: block;">Siti Aminah</span><span style="font-size: 12px; opacity: 0.7;">Waiting • 9:30 AM</span></div>
                                 <span style="background: #F59E0B; padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: 600;">Waiting</span>
-                            </div>
-                            <div class="clickable" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 14px; display: flex; align-items: center; gap: 12px; color: white;">
+                            </a>
+                            <a href="02-patient.html" class="clickable" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 14px; display: flex; align-items: center; gap: 12px; color: white; text-decoration: none;">
                                 <div style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">A03</div>
                                 <div style="flex: 1;"><span style="font-size: 14px; font-weight: 600; display: block;">Ahmad Jr.</span><span style="font-size: 12px; opacity: 0.7;">Scheduled • 10:00 AM</span></div>
                                 <span style="background: rgba(255,255,255,0.2); padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: 600;">Scheduled</span>
-                            </div>
-                            <div class="clickable" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 14px; display: flex; align-items: center; gap: 12px; color: white;">
+                            </a>
+                            <a href="02-patient.html" class="clickable" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 14px; display: flex; align-items: center; gap: 12px; color: white; text-decoration: none;">
                                 <div style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">A04</div>
                                 <div style="flex: 1;"><span style="font-size: 14px; font-weight: 600; display: block;">Mak Jah</span><span style="font-size: 12px; opacity: 0.7;">Scheduled • 10:30 AM</span></div>
                                 <span style="background: rgba(255,255,255,0.2); padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: 600;">Scheduled</span>
-                            </div>
+                            </a>
                         </div>
                         <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
                             <div style="display: flex; justify-content: space-between; color: rgba(255,255,255,0.7); font-size: 13px; margin-bottom: 8px;">

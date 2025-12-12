@@ -531,6 +531,7 @@ body.presentation-mode {
     background: #000;
     padding: 0;
     justify-content: center;
+    align-items: center;
 }
 
 body.presentation-mode .app-selector,
@@ -542,25 +543,40 @@ body.presentation-mode .screen-list {
 
 body.presentation-mode .phone-container {
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 body.presentation-mode .phone-frame {
-    width: auto;
-    height: 100vh;
-    max-height: 100vh;
+    width: auto !important;
+    height: 95vh !important;
+    max-height: 95vh !important;
     aspect-ratio: 375/812;
-    border-radius: 0;
-    padding: 0;
-    box-shadow: none;
-    background: transparent;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+/* Tablet/Provider mode - wider aspect ratio */
+body.presentation-mode .phone-frame.tablet-frame,
+body.presentation-mode .phone-frame[style*="800px"],
+body.presentation-mode .phone-frame[style*="width: 800"] {
+    aspect-ratio: 4/3 !important;
+    height: auto !important;
+    width: auto !important;
+    max-width: 98vw !important;
+    max-height: 95vh !important;
 }
 
 body.presentation-mode .phone-notch {
-    display: none;
+    display: none !important;
 }
 
 body.presentation-mode .phone-screen {
-    border-radius: 0;
+    border-radius: 0 !important;
 }
 
 /* Presentation mode toggle button */
