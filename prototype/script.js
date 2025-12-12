@@ -1,4 +1,4 @@
-// CitizenHealth Smart ID - Prototype Interactions
+// HealthLink Smart ID - Prototype Interactions
 
 document.addEventListener('DOMContentLoaded', function() {
     
@@ -151,6 +151,6 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(screen);
     });
     
-    console.log('CitizenHealth Smart ID Prototype loaded successfully!');
+    console.log('HealthLink Smart ID Prototype loaded successfully!');
 });
 
